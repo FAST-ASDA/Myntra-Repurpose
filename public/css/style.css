@@ -216,7 +216,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -247,6 +247,10 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
+}
+#tech {
+  background: #f6f6f6;
+  padding: 100px 0;
 }
 #features i.fa {
   font-size: 38px;
@@ -457,25 +461,25 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
-/* Contact Section */
-#contact {
+/* competitors Section */
+#competitors {
   padding: 100px 0 60px;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: rgba(255, 255, 255, 0.75);
 }
-#contact .section-title {
+#competitors .section-title {
   margin-bottom: 40px;
 }
-#contact .section-title p {
+#competitors .section-title p {
   font-size: 16px;
 }
-#contact h2 {
+#competitors h2 {
   color: #fff;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
-#contact .section-title h2::after {
+#competitors .section-title h2::after {
   position: absolute;
   content: "";
   background: rgba(255, 255, 255, 0.3);
@@ -484,26 +488,26 @@ header .intro-text {
   bottom: 0;
   left: 30px;
 }
-#contact h3 {
+#competitors h3 {
   color: #fff;
   margin-top: 80px;
   margin-bottom: 25px;
   padding-bottom: 20px;
   font-weight: 400;
 }
-#contact form {
+#competitors form {
   padding-top: 20px;
 }
-#contact .text-danger {
+#competitors .text-danger {
   color: #cc0033;
   text-align: left;
 }
-#contact .btn-custom {
+#competitors .btn-custom {
   margin: 30px 0;
   background: transparent;
   border: 2px solid #fff;
 }
-#contact .btn-custom:hover {
+#competitors .btn-custom:hover {
   color: #1f386e;
   background: #fff;
 }
@@ -513,7 +517,7 @@ label {
   font-family: "Open Sans", sans-serif;
   float: left;
 }
-#contact .form-control {
+#competitors .form-control {
   display: block;
   width: 100%;
   padding: 6px 12px;
@@ -530,7 +534,7 @@ label {
   -o-transition: none;
   transition: none;
 }
-#contact .form-control:focus {
+#competitors .form-control:focus {
   border-color: #999;
   outline: 0;
   -webkit-box-shadow: transparent;
@@ -548,28 +552,28 @@ label {
 .form-control:-ms-input-placeholder {
   color: #777;
 }
-#contact .contact-item {
+#competitors .competitors-item {
   margin: 20px 0;
 }
-#contact .contact-item span {
+#competitors .competitors-item span {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   display: block;
 }
-#contact .contact-item i.fa {
+#competitors .competitors-item i.fa {
   margin-right: 10px;
 }
-#contact .social {
+#competitors .social {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 50px;
   margin-top: 50px;
   text-align: center;
 }
-#contact .social ul li {
+#competitors .social ul li {
   display: inline-block;
   margin: 0 20px;
 }
-#contact .social i.fa {
+#competitors .social i.fa {
   font-size: 22px;
   width: 48px;
   height: 48px;
@@ -579,7 +583,7 @@ label {
   border-radius: 50%;
   transition: all 0.3s;
 }
-#contact .social i.fa:hover {
+#competitors .social i.fa:hover {
   color: #608dfd;
   background: #fff;
 }
@@ -602,5 +606,133 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+.main-container {
+  padding: 30px;
+}
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+.card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
   }
 }
