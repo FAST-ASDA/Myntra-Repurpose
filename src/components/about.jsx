@@ -1,3 +1,5 @@
+import ReactPlayer from 'react-player'
+
 export const About = (props) => {
   return (
     <div id="about">
@@ -5,13 +7,15 @@ export const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             {/* <img src="img/about.jpg" className="img-responsive" alt="" /> */}
-            <video src="public/video/myntra-thrift-example.mp4"></video>
+            {/* <video src="public/video/myntra-thrift-example.mp4"></video> */}
+            <ReactPlayer url='https://youtu.be/p_OREXaLbs8' width='80%' height='80%' />
+
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>About</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>Why Choose Us?</h3>
+              <h3>Why Repurpose ?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>
