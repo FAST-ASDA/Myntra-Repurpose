@@ -4,18 +4,19 @@
     "paragraph": "Repurpose is aimed to redefine your outlook on shopping"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Thrift markets are a huge unorganized sector in India who's hidden potential hasn't been tapped yet.Thus there is a need for a platform with history of clothing business to unify these sellers and give the consumers a platform to not only exchange clothes but also recommend the next new set of shoes available on Myntra that would match them. Myntra Repurpose is conceptualized on the Socialise Theme of Hackerramp.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Competitive Pricing",
+      "A platform for influencers to improve their brand",
+      "Diversified range of products",
+      "Adds personal touch to online shopping"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Eco-friendly",
+      "Possibility of finding vintage and unique items",
+      "Word of mouth marketing",
+      "Reduced fashion waste i.e improved clothing lifecycle",
+      "Inexpensive inventory"
     ]
   },
   "Gallery": [
@@ -152,13 +153,12 @@
     }
   ],
   "Competitors": [
-      {
-        "img": "img/team/03.jpg"
-      },
-      {
-        "img": "img/team/04.jpg"
-      }
-
+    {
+      "img": "img/team/03.jpg"
+    },
+    {
+      "img": "img/team/04.jpg"
+    }
   ],
   "Features": [
     {
