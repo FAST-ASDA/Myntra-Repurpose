@@ -1,4 +1,4 @@
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 
 export const About = (props) => {
   return (
@@ -8,8 +8,13 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             {/* <img src="img/about.jpg" className="img-responsive" alt="" /> */}
             {/* <video src="public/video/myntra-thrift-example.mp4"></video> */}
-            <ReactPlayer url='https://youtu.be/p_OREXaLbs8' width='80%' height='80%' />
-
+            <ReactPlayer
+              url="video/AboutVideo.mp4"
+              width="80%"
+              height="65%"
+              controls={true}
+              playing={true}
+            />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
@@ -21,8 +26,8 @@ export const About = (props) => {
                   <ul>
                     {props.data
                       ? props.data.Why.map((d, i) => (
-                        <li key={`${d}-${i}`}>{d}</li>
-                      ))
+                          <li key={`${d}-${i}`}>{d}</li>
+                        ))
                       : "loading"}
                   </ul>
                 </div>
@@ -30,8 +35,8 @@ export const About = (props) => {
                   <ul>
                     {props.data
                       ? props.data.Why2.map((d, i) => (
-                        <li key={`${d}-${i}`}> {d}</li>
-                      ))
+                          <li key={`${d}-${i}`}> {d}</li>
+                        ))
                       : "loading"}
                   </ul>
                 </div>
