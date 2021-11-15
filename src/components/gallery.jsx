@@ -1,25 +1,30 @@
 import { Image } from "./image";
+import ReactPlayer from "react-player";
 
 export const Gallery = (props) => {
   return (
     <div id='portfolio' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Gallery</h2>
+          <h2>Product</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Let's take a look at the Product Demo
           </p>
         </div>
-        <div className='row'>
-          <div className='portfolio-items'>
-            {props.data
-              ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className='col-sm-6 col-md-4 col-lg-4'>
-                  <Image title={d.title} largeImage={d.largeImage} smallImage={d.smallImage} />
-                </div>
-              ))
-              : 'Loading...'}
+        <div className='row' >
+          <div style={{
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}>
+              <ReactPlayer
+                url="video/mock.mp4"
+                width="80%"
+                height="65%"
+                controls={true}
+                playing={true}
+              />
+
           </div>
         </div>
       </div>
